@@ -15,7 +15,8 @@ const styles = StyleSheet.create({
 export default function App() {
   return (
     <View style={styles.container}>
-      <Hello />
+      <Hello bang>World</Hello>
+      <Hello style={{fontSize: 16}}>small Workd</Hello>
       <Text>Open up App.js to start working on your app!</Text>
       {/* eslint-disable*/}
       <StatusBar style="auto" />
