@@ -1,25 +1,83 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Hello from './src/components/Hello';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#F0F4F8',
+  },
+  appbar: {
+    width: '100%',
+    height: 104,
+    backgroudColor: '#467FD3',
+    justifyContent: 'flex-end',
+  },
+  appbarInner: {
     alignItems: 'center',
-    justifyContent: 'center',
+  },
+  appbarRight: {
+    position: 'absolute',
+    right: 19,
+    bottom: 8,
+  },
+  appbarTitle: {
+    marginBottom: 8,
+    fontSize: 24,
+    lineHeight: 32,
+    color: '#ffffff',
+    fontWeight: 'bold',
   },
 });
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Hello bang>World</Hello>
-      <Hello style={{fontSize: 16}}>small Workd</Hello>
-      <Text>Open up App.js to start working on your app!</Text>
-      {/* eslint-disable*/}
-      <StatusBar style="auto" />
+      {/* ログアウト */}
+      <View style={styles.appbar}>
+        <View style={styles.appbarInner}>
+          <Text styke={styles.appbarTitle}>Memo App</Text>
+          <Text style={styles.appbarRight}>ログアウト</Text>
+        </View>
+      </View>
+      {/* 買い物リスト */}
+      <View>
+        <View>
+          <View>
+            <Text>買い物リスト</Text>
+            <Text>2020年12月24日</Text>
+          </View>
+          <View>
+            <Text>X</Text>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <Text>買い物リスト</Text>
+            <Text>2020年12月24日</Text>
+          </View>
+          <View>
+            <Text>X</Text>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <Text>買い物リスト</Text>
+            <Text>2020年12月24日</Text>
+          </View>
+          <View>
+            <Text>X</Text>
+          </View>
+        </View>
+      </View>
+      {/* プラスボタン */}
+      <View>
+        <Text>+</Text>
+      </View>
+
     </View>
   );
 }
