@@ -19,7 +19,7 @@ export default function MemoDetailScreen() {
           書体やレイアウトなどを確認するために用います
         </Text>
       </ScrollView>
-      <CircleButton style={{ top: 160, buttom: 'auto' }}>+</CircleButton>
+      <CircleButton style={{ top: 160, buttom: 'auto' }} name="edit-2" />
     </View>
   );
 }
