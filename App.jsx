@@ -10,6 +10,9 @@ import LoginScreen from './src/screens/LoginScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
 import { firebaseConfig } from './env';
 
+// firebaseデータベースの初期設定
+require('firebase/firestore');
+
 const Stack = createStackNavigator();
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
